@@ -1,5 +1,5 @@
-const myChoice = document.getElementById("mychoise");
-const computerChoise = document.getElementById("computerChoise");
+const myChoice = document.getElementById("mychoice");
+const computerChoice = document.getElementById("computerChoice");
 const result = document.getElementById("result");
 let totalScore = document.getElementById("total-score");
 let score = {
@@ -21,9 +21,9 @@ function functionMain(userChoice) {
     }
   
     myChoice.src = "./mysrc/1.png";
-    computerChoise.src = `./mysrc/${computerNumber}.png`;
+    computerChoice.src = `./mysrc/${computerNumber}.png`;
     myChoice.style.display = "flex";
-    computerChoise.style.display = "flex";
+    computerChoice.style.display = "flex";
   }
   
   if (userChoice === 'Kaghaz') {
@@ -36,9 +36,9 @@ function functionMain(userChoice) {
     }
   
     myChoice.src="./mysrc/2.png";
-    computerChoise.src=`./mysrc/${computerNumber}.png`;
+    computerChoice.src=`./mysrc/${computerNumber}.png`;
     myChoice.style.display="flex";
-    computerChoise.style.display="flex";
+    computerChoice.style.display="flex";
   }
   
   if (userChoice === 'Gheichi') {
@@ -51,9 +51,9 @@ function functionMain(userChoice) {
      }
      
      myChoice.src="./mysrc/3.png";
-     computerChoise.src=`./mysrc/${computerNumber}.png`;
+     computerChoice.src=`./mysrc/${computerNumber}.png`;
      myChoice.style.display="flex";
-     computerChoise.style.display="flex";
+     computerChoice.style.display="flex";
   }
   updateScore();
 
