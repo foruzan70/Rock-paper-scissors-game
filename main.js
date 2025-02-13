@@ -1,4 +1,4 @@
-const myChoise = document.getElementById("mychoise");
+const myChoice = document.getElementById("mychoise");
 const computerChoise = document.getElementById("computerChoise");
 const result = document.getElementById("result");
 let totalScore = document.getElementById("total-score");
@@ -20,9 +20,9 @@ function functionMain(userChoice) {
       result.innerText = "بردی";
     }
   
-    myChoise.src = "./mysrc/1.png";
+    myChoice.src = "./mysrc/1.png";
     computerChoise.src = `./mysrc/${computerNumber}.png`;
-    myChoise.style.display = "flex";
+    myChoice.style.display = "flex";
     computerChoise.style.display = "flex";
   }
   
@@ -35,9 +35,9 @@ function functionMain(userChoice) {
       result.innerText= "باختی";
     }
   
-    myChoise.src="./mysrc/2.png";
+    myChoice.src="./mysrc/2.png";
     computerChoise.src=`./mysrc/${computerNumber}.png`;
-    myChoise.style.display="flex";
+    myChoice.style.display="flex";
     computerChoise.style.display="flex";
   }
   
@@ -50,9 +50,9 @@ function functionMain(userChoice) {
        result.innerText= "مساوی";
      }
      
-     myChoise.src="./mysrc/3.png";
+     myChoice.src="./mysrc/3.png";
      computerChoise.src=`./mysrc/${computerNumber}.png`;
-     myChoise.style.display="flex";
+     myChoice.style.display="flex";
      computerChoise.style.display="flex";
   }
   updateScore();
